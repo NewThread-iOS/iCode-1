@@ -1,17 +1,14 @@
 //
-//  AppDelegate.h
+//  UIImage+image.h
 //  iCode
 //
 //  Created by Mr.Nut on 16/10/29.
 //  Copyright © 2016年 Mr.Nut. All rights reserved.
 //
-
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface UIImage (image)
 
-@property (strong, nonatomic) UIWindow *window;
-
++(instancetype)imageWithOringinalNanme:(NSString*)imageName;
 
 @end
-

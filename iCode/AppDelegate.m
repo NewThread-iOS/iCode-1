@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LJTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    LJTabBarController *tableBarController = [[LJTabBarController alloc]init];
+    
+    //设置tabBar不透明
+    tableBarController.tabBar.translucent = NO;
+    
+    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:tableBarController];
+    
+    //设置navigationBar不透明
+    navigationController.navigationBar.translucent = NO;
+    
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

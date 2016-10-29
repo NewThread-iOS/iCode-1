@@ -1,24 +1,24 @@
 //
-//  ViewController.m
+//  LiveViewController.m
 //  iCode
 //
 //  Created by Mr.Nut on 16/10/29.
 //  Copyright © 2016年 Mr.Nut. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LiveViewController.h"
 
-@interface ViewController ()
+@interface LiveViewController ()
 
 @end
 
-@implementation ViewController
+@implementation LiveViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor redColor];
+    // Do any additional setup after loading the view.
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
